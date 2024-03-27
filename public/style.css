@@ -1,0 +1,27 @@
+h1{
+    color: red;
+}
+
+.post{
+    background-color:turquoise;
+}
+
+.username{
+    font-weight:bold;
+}
+
+.content{
+    background-color:yellow;
+}
+
+.button{
+    height:10px;
+    width:25px;
+    font-weight:bold;
+    font-size: smaller;
+    background-color:darkgray;
+    color:black;
+    text-decoration:none;
+    border-radius:2px;
+    border:1px solid black;
+}
