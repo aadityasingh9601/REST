@@ -8,9 +8,9 @@
 <body>
     <form method="post" action="/posts/<%=post.id%>?_method=patch">
         <h2>Edit Post</h2>
-        <p>Post id:<%= post.id %></p>
-        <h3><%= post.username %></h3>  
-        <textarea name="content"><%= post.content %></textarea> 
+        <p>Post id:<%=post.id%></p>
+        <h3><%=post.username%></h3>  
+        <textarea name="content"><%=post.content%></textarea> 
         <button>Submit</button>
     </form>
 </body>
