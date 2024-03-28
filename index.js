@@ -67,7 +67,13 @@ app.patch("/posts/:id",(req,res)=>{
     let newContent = req.body.content;
     console.log(newContent);
     let post = posts.find((p)=> id===p.id);
-    console.log(post);
+    //console.log(post);
     post.content = newContent;
+    res.redirect("/posts");
+})
+
+app.delete("/posts/:id",(req,res)=>{
+    let {id} = req.params;
+    posts = posts.filter((p)=> id !== p.id);//Jiski id post ki id ke equal nhi h vo filter ho jayegi.
     res.redirect("/posts");
 })
